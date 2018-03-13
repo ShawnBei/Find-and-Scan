@@ -1,0 +1,37 @@
+#header {
+	margin: 0 auto;
+}
+
+.userInput {
+	margin: 140px auto 0 auto;
+	width: 40%;
+}
+
+.userInput #inputGroup-sizing-lg {
+	width: 120px;
+}
+
+.userInput .input-group {
+	margin: 10px 0;
+}
+
+
+
+
+.first_div {
+	margin: 170px 30%;
+}
+
+#logout_btn {
+	float: right;
+}
+
+.first_div .center_btn {
+	margin-left: 10px;
+}
+
+#qrcode {
+	margin: 160px auto;
+	width: 400px;
+}
+
