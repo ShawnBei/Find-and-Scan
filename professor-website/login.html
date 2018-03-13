@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find and Scan - Professor Use Only</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	</head>
+
+
+	<body>
+
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <a class="navbar-brand" href="" id="header">Find and Scan - Professor Use Only</a>
+		  	<button type="button" class="btn btn-outline-light" id="logout_btn" onclick="logOut()">Log Out</button>
+		</nav>
+
+
+
+		<div class="first_div" id="first_div">
+
+			<div class="input-group input-group-lg">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-lg">Course</span>
+			  </div>
+			  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="course_field">
+			  <button type="button" class="btn btn-outline-primary center_btn" onclick="getCode()">Get Code</button>
+			</div>
+
+		</div>
+
+
+		<div id="qrcode"></div>
+			
+		
+
+
+
+
+
+
+		<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyCPPcU0-TWlvdaGJLMJLYPZgLBkzAViQMo",
+		    authDomain: "find-and-scan.firebaseapp.com",
+		    databaseURL: "https://find-and-scan.firebaseio.com",
+		    projectId: "find-and-scan",
+		    storageBucket: "find-and-scan.appspot.com",
+		    messagingSenderId: "880663859241"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+		<script type="text/javascript" src="js/index.js"></script>
+
+		<script type="text/javascript" src="js/qrcode.js"></script>
+
+		<script type="text/javascript">
+
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				width : 400,
+				height : 400
+			});
+
+		</script>
+
+
+	</body>
+</html>
