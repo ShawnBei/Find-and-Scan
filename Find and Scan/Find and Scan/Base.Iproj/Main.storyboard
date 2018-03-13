@@ -561,30 +561,44 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-eC-mIC">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please go to " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv5-Ij-p1i">
-                                        <rect key="frame" x="114" y="239" width="146" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please go to " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv5-Ij-p1i">
+                                        <rect key="frame" x="132" y="205" width="110" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="http://" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yny-aY-Bjo">
-                                        <rect key="frame" x="94" y="288" width="186" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="www.ningbei001.com" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xv-Eo-7fe">
+                                        <rect key="frame" x="73" y="260" width="228" height="31"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-4z-jt6">
+                                        <rect key="frame" x="146" y="406" width="83" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="85k-WW-QLU"/>
+                                            <constraint firstAttribute="height" constant="30" id="YlD-9b-QeP"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFf-4z-jt6">
-                                        <rect key="frame" x="157" y="426" width="60" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Log Out"/>
+                                        <state key="normal" title="Log Out">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="logOutbtn:" destination="LJG-ft-ti8" eventType="touchUpInside" id="Qo8-Pw-trs"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.39374953509999999" green="0.73758846519999999" blue="0.71372836829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="IFf-4z-jt6" firstAttribute="centerX" secondItem="8cC-eC-mIC" secondAttribute="centerX" id="9cl-fD-AnP"/>
+                                    <constraint firstItem="tv5-Ij-p1i" firstAttribute="top" secondItem="8cC-eC-mIC" secondAttribute="top" constant="205" id="Pib-bO-wQJ"/>
+                                    <constraint firstItem="tv5-Ij-p1i" firstAttribute="leading" secondItem="8cC-eC-mIC" secondAttribute="leading" constant="132" id="Xmh-G5-yfB"/>
+                                    <constraint firstAttribute="trailing" secondItem="tv5-Ij-p1i" secondAttribute="trailing" constant="133" id="ZVT-04-8Kw"/>
+                                    <constraint firstItem="tv5-Ij-p1i" firstAttribute="centerX" secondItem="8cC-eC-mIC" secondAttribute="centerX" id="bbE-0W-FH1"/>
+                                    <constraint firstItem="IFf-4z-jt6" firstAttribute="top" secondItem="6Xv-Eo-7fe" secondAttribute="bottom" constant="115" id="rew-K3-WG7"/>
+                                    <constraint firstItem="6Xv-Eo-7fe" firstAttribute="top" secondItem="tv5-Ij-p1i" secondAttribute="bottom" constant="32" id="wr4-HN-3DA"/>
+                                    <constraint firstItem="6Xv-Eo-7fe" firstAttribute="centerX" secondItem="8cC-eC-mIC" secondAttribute="centerX" id="zpX-Sf-2oo"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -610,7 +624,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="37s-2y-gFT"/>
-        <segue reference="NgR-no-640"/>
+        <segue reference="nlD-PV-ios"/>
         <segue reference="Kji-er-oHH"/>
     </inferredMetricsTieBreakers>
 </document>
