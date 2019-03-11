@@ -9,12 +9,12 @@ Another factor that influences students’ performance living in campus is atten
 ## Aim and Objectives
 The aim of this object is building an application can be used to search facilities and mark attendance records.
 
--To implement an application on iOS platform and a simple website.
--To build a campus map showing the inside view of buildings.
--To allow students search facilities on the map.
--To add a QR code scanning function in this application.
--To connect application to database.
--To add a function to allow students to see their attendance records.
--To develop this application and the website on Xcode.
--To do a surrey and get feedback from students.
--To write a conclusion.
+- To implement an application on iOS platform and a simple website.
+- To build a campus map showing the inside view of buildings.
+- To allow students search facilities on the map.
+- To add a QR code scanning function in this application.
+- To connect application to database.
+- To add a function to allow students to see their attendance records.
+- To develop this application and the website on Xcode.
+- To do a surrey and get feedback from students.
+- To write a conclusion.
